@@ -8,6 +8,7 @@
   var keys = {37: 1, 38: 1, 39: 1, 40: 1};
 
   /**
+   * Constructor ScrollControl
    * @constructor
    */
   var ScrollControl = function ScrollControl() {};
@@ -38,6 +39,10 @@
     document.onkeydown = null;
   };
 
+  /**
+   * Cancel all user events
+   * @private
+   */
   ScrollControl.prototype._preventDefault = function(e) {
     e = e || window.event;
     if (e.preventDefault) {
@@ -46,6 +51,11 @@
     e.returnValue = false;
   };
 
+  /**
+   * Cancel all user key events
+   * @returns {boolean}
+   * @private
+   */
   ScrollControl.prototype._preventDefaultForScrollKeys = function(e) {
     if (keys[e.keyCode]) {
       this._preventDefault(e);
