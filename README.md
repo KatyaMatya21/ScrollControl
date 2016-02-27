@@ -1,4 +1,4 @@
-# ScrollControl
+# ScrollControl Plugin
 Java Script plugin which helps to control user scroll 
 
 ###Requirements
