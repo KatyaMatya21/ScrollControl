@@ -4,6 +4,7 @@ Java Script plugin which helps to control user scroll
 ###Requirements
 Vanilla JS is required to run this plugin.
 
+
 ###Usage
 
 First, add **scroll.js** to your page:
